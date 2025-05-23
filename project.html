@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1>
+    Welcome To My Clicker Game
+</h1>
+<div class="container">
+    <div class="content">
+        <h1>User Info</h1>
+        <div class="row">
+            <div>
+                <label for="first">First Name</label>
+                <input type="text" id="first" name="first_name" placeholder="">
+            </div>
+            <div>
+                <label for="last">Last Name</label>
+                <input type="text" id="last" name="last_name" placeholder="">
+            </div>
+        </div>
+        <br>
+        <button id="enter">Enter</button>
+        <div id="Players"></div>
+    </div>
+</div>
+<br>
+<div class="container2">
+    <div class="content2">
+        <h2>Ore Clicker</h2>
+        <div class="picture-section">
+            <img id="picture"
+                 src="https://media.printables.com/media/prints/685338/images/5398115_4d624491-2c84-4e10-bf73-9ecc99507855_4a57a6f2-760c-42ff-818c-b1843bfd6c48/thumbs/inside/1280x960/png/screenshot-2023-12-18-133416.webp"
+                 width="500" height="500">
+        </div>
+    </div>
+</div>
+
+<script>
+    const firstName = document.getElementById('first');
+    const lastName = document.getElementById('last');
+    const enter = document.getElementById('enter');
+    const Players = document.getElementById('Players');
+
+    enter.addEventListener('click', function () {
+        const first = firstName.value;
+        const last = lastName.value;
+
+        if (first || last) {
+            const message = document.createElement('h3');
+            message.textContent = "Welcome: "+ first + " " + last;
+            Players.appendChild(message);
+
+            firstName.value = "";
+            lastName.value = "";
+        }
+    });
+totalnumber.addEventListener('click', function (){
+    let clicks= click.value;
+
+})
+</script>
+</body>
+</html>
