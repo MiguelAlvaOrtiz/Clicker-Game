@@ -90,4 +90,6 @@ section header{
     border-radius: 12px;
     width: 2000px;
 }
-
+.h1{
+    text-align: center;
+}
